@@ -1,0 +1,77 @@
+{
+  "title": "DailyAdjustedModel",
+  "type": "object",
+  "properties": {
+    "data": {
+      "title": "Data",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DailyAdjustedItemModel"
+      }
+    }
+  },
+  "required": [
+    "data"
+  ],
+  "definitions": {
+    "DailyAdjustedItemModel": {
+      "title": "DailyAdjustedItemModel",
+      "type": "object",
+      "properties": {
+        "date_time": {
+          "title": "Date Time",
+          "type": "string",
+          "format": "date"
+        },
+        "symbol": {
+          "title": "Symbol",
+          "type": "string"
+        },
+        "open": {
+          "title": "Open",
+          "type": "number"
+        },
+        "high": {
+          "title": "High",
+          "type": "number"
+        },
+        "low": {
+          "title": "Low",
+          "type": "number"
+        },
+        "close": {
+          "title": "Close",
+          "type": "number"
+        },
+        "adjusted_close": {
+          "title": "Adjusted Close",
+          "type": "number"
+        },
+        "volume": {
+          "title": "Volume",
+          "type": "integer"
+        },
+        "dividend_amount": {
+          "title": "Dividend Amount",
+          "type": "number"
+        },
+        "split_coefficient": {
+          "title": "Split Coefficient",
+          "type": "number"
+        }
+      },
+      "required": [
+        "date_time",
+        "symbol",
+        "open",
+        "high",
+        "low",
+        "close",
+        "adjusted_close",
+        "volume",
+        "dividend_amount",
+        "split_coefficient"
+      ]
+    }
+  }
+}

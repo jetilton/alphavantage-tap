@@ -1,0 +1,2 @@
+include LICENSE
+include av-tap/schemas/*.json
